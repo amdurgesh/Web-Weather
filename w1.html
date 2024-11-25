@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="image/cloud.png">
+    <link rel="stylesheet" href="w1.css">
+</head>
+
+<body>
+
+    <!--container div that contains  element-->
+    <div class="container">
+
+        <!--header div open-->
+        <div class="header">
+
+            <!--search box-->
+            <div class="search-box">
+                <input type="text" placeholder="Enter Your Location" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn">
+                </button>
+
+            </div><!--search box close-->
+
+        </div><!--header div close-->
+
+        <!--location class -->
+        <div class="location-not-found">
+            <h1>Sorry, weather Not found
+                Enter Wrong city!!!</h1>
+            <img src="image/404.png" alt="404 Error">
+
+        </div><!--location class close-->
+
+        <!--weather body class-->
+        <div class="weather-body">
+            <img src="image/cloud.png" alt="weather image" class="weather-image">
+            <div class="weather-box">
+                <p class="temperature">0<sup>℃</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="Wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="Wind-Speed">11km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--weather body close-->
+
+
+    </div><!--container div close-->
+
+
+    <script src="w1.js"></script>
+    <script src="https://kit.fontawesome.com/dea13b6650.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
